@@ -11,3 +11,7 @@ gcc<br>
 make<br>
 gtk3<br>
 
+```shell
+# Creating an executable file
+make
+```
