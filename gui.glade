@@ -1,0 +1,3112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkDialog" id="drules">
+    <property name="width-request">550</property>
+    <property name="height-request">234</property>
+    <property name="can-focus">False</property>
+    <property name="type">popup</property>
+    <property name="title" translatable="yes">Rules</property>
+    <property name="window-position">center</property>
+    <property name="type-hint">dialog</property>
+    <property name="deletable">False</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="pop_rules">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">4</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <object class="GtkButton" id="close_rules">
+                <property name="label" translatable="yes">Close</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_close_rules_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">In 6x6, you can put any number from 1 to 6
+ in the empty cells, provided that it is not repeated
+ in the same row or column.
+
+
+In the 9x9 the same thing, in addition to the number
+ chosen not being repeated in the same subgrid 3x3.</property>
+            <attributes>
+              <attribute name="font-desc" value="Hack Nerd Font 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="good">
+    <property name="can-focus">False</property>
+    <property name="type">popup</property>
+    <property name="window-position">center</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Congratulations:)</property>
+            <attributes>
+              <attribute name="font-desc" value="Hack NF Bold Italic 26"/>
+              <attribute name="foreground" value="#2626a2a26969"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">79</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="close1">
+            <property name="width-request">82</property>
+            <property name="height-request">43</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_close1_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Close</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans 14"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">346</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="notvalid">
+    <property name="can-focus">False</property>
+    <property name="type">popup</property>
+    <property name="window-position">center</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Not Valid!</property>
+            <property name="justify">center</property>
+            <attributes>
+              <attribute name="font-desc" value="Hack NF Bold Italic 34"/>
+              <attribute name="foreground" value="#e0e01b1b2424"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">87</property>
+            <property name="y">66</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="close0">
+            <property name="width-request">86</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_close0_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Close</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans 14"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">340</property>
+            <property name="y">201</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="s6">
+    <property name="width-request">600</property>
+    <property name="height-request">400</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Sudoku</property>
+    <property name="window-position">center</property>
+    <child>
+      <object class="GtkPaned">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="position">81</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="s6back">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image-position">bottom</property>
+                <property name="always-show-image">True</property>
+                <signal name="clicked" handler="on_s6back_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Back</property>
+                    <property name="justify">center</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold 16"/>
+                      <attribute name="foreground" value="#c0c01c1c2828"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="save6">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_save6_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Save</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold 16"/>
+                      <attribute name="foreground" value="#e5e5a5a50a0a"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="submit6">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
+                <signal name="clicked" handler="on_submit6_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Submit</property>
+                    <property name="justify">center</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold 16"/>
+                      <attribute name="foreground" value="#2626a2a26969"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="resize">False</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+        <child>
+          <!-- n-columns=6 n-rows=6 -->
+          <object class="GtkGrid">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="row-homogeneous">True</property>
+            <property name="column-homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="b00">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l00">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b01">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b01_clicked" object="l01" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l01">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b02">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b02_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l02">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b03">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b03_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l03">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b04">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b04_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l04">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b10">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b10_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l10">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b11">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b11_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l11">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b05">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b05_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l05">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b12">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b12_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l12">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b13">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b13_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l13">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b14">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b14_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l14">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b23">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b23_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l23">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b15">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b15_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l15">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b24">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b24_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l24">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b20">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b20_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l20">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b21">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b21_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l21">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b22">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b22_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l22">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b30">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b30_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l30">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b25">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b25_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l25">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b31">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b31_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l31">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b32">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b32_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l32">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b33">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b33_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l33">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b35">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b35_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l35">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b34">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b34_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l34">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b45">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b45_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l45">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b44">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b44_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l44">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b43">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b43_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l43">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b42">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b42_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l42">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b41">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b41_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l41">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b40">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b40_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l40">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b50">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b50_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l50">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b51">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b51_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l51">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b52">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b52_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l52">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b53">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b53_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l53">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b54">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b54_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l54">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b55">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b55_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l55">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="resize">True</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="s9">
+    <property name="width-request">600</property>
+    <property name="height-request">400</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Sudoku</property>
+    <property name="window-position">center</property>
+    <child>
+      <object class="GtkPaned">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="position">81</property>
+        <property name="position-set">True</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="s9back">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image-position">bottom</property>
+                <property name="always-show-image">True</property>
+                <signal name="clicked" handler="on_s9back_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Back</property>
+                    <property name="justify">center</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold 16"/>
+                      <attribute name="foreground" value="#c0c01c1c2828"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="save9">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_save9_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Save</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold 16"/>
+                      <attribute name="foreground" value="#e5e5a5a50a0a"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="submit9">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
+                <signal name="clicked" handler="on_submit9_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="label" translatable="yes">Submit</property>
+                    <property name="justify">center</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold 15"/>
+                      <attribute name="foreground" value="#2626a2a26969"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="resize">False</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+        <child>
+          <!-- n-columns=9 n-rows=9 -->
+          <object class="GtkGrid">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="row-homogeneous">True</property>
+            <property name="column-homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="b900">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l900">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b901">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b901_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l901">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b902">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b902_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l902">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b903">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b903_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l903">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b904">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b904_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l904">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b910">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b910_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l910">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b911">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b911_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l911">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b905">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b905_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l905">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b912">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b912_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l912">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b913">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b913_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l913">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b914">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b914_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l914">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b923">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b923_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l923">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b915">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b915_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l915">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b924">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b924_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l924">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b920">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b920_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l920">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b921">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b921_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l921">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b922">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b922_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l922">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b930">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b930_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l930">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b925">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b925_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l925">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b931">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b931_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l931">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b932">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b932_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l932">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b933">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b933_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l933">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b935">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b935_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l935">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b934">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b934_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l934">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b945">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b945_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l945">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b944">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b944_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l944">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b943">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b943_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l943">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b942">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b942_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l942">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b941">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b941_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l941">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b940">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b940_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l940">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b950">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b950_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l950">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b951">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b951_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l951">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b952">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b952_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l952">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b953">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b953_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l953">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b954">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b954_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l954">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b955">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b955_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l955">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b916">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b916_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l916">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b906">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b906_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l906">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b926">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b926_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l926">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b936">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b936_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l936">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b946">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b946_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l946">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b956">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b956_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l956">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b966">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b966_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l966">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b976">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b976_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l976">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b986">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b986_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l986">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b965">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b965_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l965">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b975">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b975_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l975">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b985">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b985_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l985">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b964">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b964_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l964">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b974">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b974_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l974">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b984">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b984_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l984">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b963">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b963_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l963">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b973">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b973_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l973">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b983">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b983_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l983">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b962">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b962_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l962">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b972">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b972_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l972">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b982">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b982_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l982">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b961">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b961_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l961">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b971">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b971_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l971">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b981">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b981_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l981">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b960">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b960_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l960">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b970">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b970_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l970">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b980">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b980_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l980">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b907">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b907_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l907">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b908">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b908_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l908">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b917">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b917_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l917">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b918">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b918_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l918">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b927">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b927_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l927">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b928">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b928_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l928">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b937">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b937_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l937">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b938">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b938_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l938">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b947">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b947_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l947">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b948">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b948_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l948">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b957">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b957_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l957">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b958">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b958_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l958">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b967">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b967_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l967">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b968">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b968_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l968">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b977">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b977_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l977">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b978">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b978_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l978">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b987">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b987_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l987">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">7</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b988">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_b988_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkLabel" id="l988">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Hack Nerd Font Bold 22"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">8</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="resize">True</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window">
+    <property name="width-request">600</property>
+    <property name="height-request">450</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Sudoku</property>
+    <property name="window-position">center</property>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="button1">
+            <property name="width-request">185</property>
+            <property name="height-request">57</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_button1_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Play</property>
+                <attributes>
+                  <attribute name="font-desc" value="Hack NF Bold Italic 20"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">205</property>
+            <property name="y">262</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="tooltip-text" translatable="yes">Click me!</property>
+            <property name="label" translatable="yes">Sudoku Game!
+</property>
+            <attributes>
+              <attribute name="font-desc" value="Marhey Light, Bold 46"/>
+              <attribute name="foreground" value="#e0e01b1b2424"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">70</property>
+            <property name="y">54</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="rules">
+            <property name="width-request">185</property>
+            <property name="height-request">57</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_rules_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Rules</property>
+                <attributes>
+                  <attribute name="font-desc" value="Hack NF Bold Italic 20"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">205</property>
+            <property name="y">335</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">V1.0</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans 16"/>
+              <attribute name="foreground" value="#e5e5a5a50a0a"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">22</property>
+            <property name="y">399</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="continue">
+            <property name="name">mycontinue</property>
+            <property name="width-request">185</property>
+            <property name="height-request">57</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_continue_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Continue</property>
+                <attributes>
+                  <attribute name="font-desc" value="Hack NF Bold Italic 20"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">205</property>
+            <property name="y">189</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window2">
+    <property name="width-request">600</property>
+    <property name="height-request">400</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Sudoku</property>
+    <property name="window-position">center</property>
+    <child>
+      <object class="GtkFixed" id="fixed2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="easy">
+            <property name="width-request">185</property>
+            <property name="height-request">57</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_easy_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Easy</property>
+                <attributes>
+                  <attribute name="font-desc" value="Hack NF Bold Italic 20"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">205</property>
+            <property name="y">181</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="hard">
+            <property name="width-request">185</property>
+            <property name="height-request">57</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_hard_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Hard</property>
+                <attributes>
+                  <attribute name="font-desc" value="Hack NF Bold Italic 20"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">205</property>
+            <property name="y">262</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label2">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Can you win ?
+</property>
+            <attributes>
+              <attribute name="font-desc" value="Marhey Light, Bold 36"/>
+              <attribute name="foreground" value="#e0e01b1b2424"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">135</property>
+            <property name="y">52</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_easy">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">6x6</property>
+            <attributes>
+              <attribute name="font-desc" value="Hack Nerd Font Bold 20"/>
+              <attribute name="foreground" value="#3333d1d17a7a"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">384</property>
+            <property name="y">169</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_hard">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">9x9</property>
+            <attributes>
+              <attribute name="font-desc" value="Hack Bold 20"/>
+              <attribute name="foreground" value="#e0e01b1b2424"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">384</property>
+            <property name="y">252</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="back">
+            <property name="label" translatable="yes">Back</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_back_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">14</property>
+            <property name="y">19</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
