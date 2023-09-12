@@ -8,6 +8,3 @@ Features:
 
 The GTK and design could be better than that but it's just a beginning.
 
-
-https://github.com/abdalrahmanshaban0/sudoku-game/assets/126330281/d6470802-ad3f-4edb-9b79-01e1ba586ab2
-
