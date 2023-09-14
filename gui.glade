@@ -304,7 +304,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b01_clicked" object="l01" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l01">
                     <property name="visible">True</property>
@@ -325,7 +325,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b02_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l02">
                     <property name="visible">True</property>
@@ -346,7 +346,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b03_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l03">
                     <property name="visible">True</property>
@@ -367,7 +367,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b04_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l04">
                     <property name="visible">True</property>
@@ -388,7 +388,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b10_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l10">
                     <property name="visible">True</property>
@@ -409,7 +409,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b11_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l11">
                     <property name="visible">True</property>
@@ -430,7 +430,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b05_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l05">
                     <property name="visible">True</property>
@@ -451,7 +451,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b12_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l12">
                     <property name="visible">True</property>
@@ -472,7 +472,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b13_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l13">
                     <property name="visible">True</property>
@@ -493,7 +493,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b14_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l14">
                     <property name="visible">True</property>
@@ -514,7 +514,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b23_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l23">
                     <property name="visible">True</property>
@@ -535,7 +535,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b15_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l15">
                     <property name="visible">True</property>
@@ -556,7 +556,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b24_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l24">
                     <property name="visible">True</property>
@@ -577,7 +577,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b20_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l20">
                     <property name="visible">True</property>
@@ -598,7 +598,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b21_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l21">
                     <property name="visible">True</property>
@@ -619,7 +619,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b22_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l22">
                     <property name="visible">True</property>
@@ -640,7 +640,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b30_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l30">
                     <property name="visible">True</property>
@@ -661,7 +661,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b25_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l25">
                     <property name="visible">True</property>
@@ -682,7 +682,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b31_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l31">
                     <property name="visible">True</property>
@@ -703,7 +703,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b32_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l32">
                     <property name="visible">True</property>
@@ -724,7 +724,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b33_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l33">
                     <property name="visible">True</property>
@@ -745,7 +745,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b35_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l35">
                     <property name="visible">True</property>
@@ -766,7 +766,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b34_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l34">
                     <property name="visible">True</property>
@@ -787,7 +787,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b45_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l45">
                     <property name="visible">True</property>
@@ -808,7 +808,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b44_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l44">
                     <property name="visible">True</property>
@@ -829,7 +829,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b43_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l43">
                     <property name="visible">True</property>
@@ -850,7 +850,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b42_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l42">
                     <property name="visible">True</property>
@@ -871,7 +871,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b41_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l41">
                     <property name="visible">True</property>
@@ -892,7 +892,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b40_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l40">
                     <property name="visible">True</property>
@@ -913,7 +913,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b50_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l50">
                     <property name="visible">True</property>
@@ -934,7 +934,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b51_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l51">
                     <property name="visible">True</property>
@@ -955,7 +955,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b52_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l52">
                     <property name="visible">True</property>
@@ -976,7 +976,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b53_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l53">
                     <property name="visible">True</property>
@@ -997,7 +997,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b54_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l54">
                     <property name="visible">True</property>
@@ -1018,7 +1018,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b55_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b00_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l55">
                     <property name="visible">True</property>
@@ -1180,7 +1180,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b901_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l901">
                     <property name="visible">True</property>
@@ -1201,7 +1201,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b902_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l902">
                     <property name="visible">True</property>
@@ -1222,7 +1222,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b903_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l903">
                     <property name="visible">True</property>
@@ -1243,7 +1243,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b904_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l904">
                     <property name="visible">True</property>
@@ -1264,7 +1264,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b910_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l910">
                     <property name="visible">True</property>
@@ -1285,7 +1285,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b911_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l911">
                     <property name="visible">True</property>
@@ -1306,7 +1306,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b905_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l905">
                     <property name="visible">True</property>
@@ -1327,7 +1327,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b912_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l912">
                     <property name="visible">True</property>
@@ -1348,7 +1348,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b913_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l913">
                     <property name="visible">True</property>
@@ -1369,7 +1369,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b914_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l914">
                     <property name="visible">True</property>
@@ -1390,7 +1390,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b923_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l923">
                     <property name="visible">True</property>
@@ -1411,7 +1411,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b915_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l915">
                     <property name="visible">True</property>
@@ -1432,7 +1432,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b924_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l924">
                     <property name="visible">True</property>
@@ -1453,7 +1453,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b920_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l920">
                     <property name="visible">True</property>
@@ -1474,7 +1474,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b921_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l921">
                     <property name="visible">True</property>
@@ -1495,7 +1495,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b922_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l922">
                     <property name="visible">True</property>
@@ -1516,7 +1516,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b930_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l930">
                     <property name="visible">True</property>
@@ -1537,7 +1537,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b925_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l925">
                     <property name="visible">True</property>
@@ -1558,7 +1558,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b931_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l931">
                     <property name="visible">True</property>
@@ -1579,7 +1579,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b932_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l932">
                     <property name="visible">True</property>
@@ -1600,7 +1600,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b933_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l933">
                     <property name="visible">True</property>
@@ -1621,7 +1621,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b935_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l935">
                     <property name="visible">True</property>
@@ -1642,7 +1642,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b934_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l934">
                     <property name="visible">True</property>
@@ -1663,7 +1663,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b945_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l945">
                     <property name="visible">True</property>
@@ -1684,7 +1684,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b944_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l944">
                     <property name="visible">True</property>
@@ -1705,7 +1705,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b943_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l943">
                     <property name="visible">True</property>
@@ -1726,7 +1726,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b942_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l942">
                     <property name="visible">True</property>
@@ -1747,7 +1747,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b941_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l941">
                     <property name="visible">True</property>
@@ -1768,7 +1768,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b940_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l940">
                     <property name="visible">True</property>
@@ -1789,7 +1789,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b950_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l950">
                     <property name="visible">True</property>
@@ -1810,7 +1810,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b951_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l951">
                     <property name="visible">True</property>
@@ -1831,7 +1831,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b952_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l952">
                     <property name="visible">True</property>
@@ -1852,7 +1852,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b953_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l953">
                     <property name="visible">True</property>
@@ -1873,7 +1873,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b954_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l954">
                     <property name="visible">True</property>
@@ -1894,7 +1894,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b955_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l955">
                     <property name="visible">True</property>
@@ -1915,7 +1915,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b916_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l916">
                     <property name="visible">True</property>
@@ -1936,7 +1936,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b906_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l906">
                     <property name="visible">True</property>
@@ -1957,7 +1957,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b926_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l926">
                     <property name="visible">True</property>
@@ -1978,7 +1978,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b936_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l936">
                     <property name="visible">True</property>
@@ -1999,7 +1999,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b946_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l946">
                     <property name="visible">True</property>
@@ -2020,7 +2020,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b956_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l956">
                     <property name="visible">True</property>
@@ -2041,7 +2041,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b966_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l966">
                     <property name="visible">True</property>
@@ -2062,7 +2062,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b976_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l976">
                     <property name="visible">True</property>
@@ -2083,7 +2083,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b986_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l986">
                     <property name="visible">True</property>
@@ -2104,7 +2104,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b965_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l965">
                     <property name="visible">True</property>
@@ -2125,7 +2125,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b975_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l975">
                     <property name="visible">True</property>
@@ -2146,7 +2146,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b985_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l985">
                     <property name="visible">True</property>
@@ -2167,7 +2167,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b964_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l964">
                     <property name="visible">True</property>
@@ -2188,7 +2188,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b974_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l974">
                     <property name="visible">True</property>
@@ -2209,7 +2209,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b984_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l984">
                     <property name="visible">True</property>
@@ -2230,7 +2230,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b963_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l963">
                     <property name="visible">True</property>
@@ -2251,7 +2251,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b973_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l973">
                     <property name="visible">True</property>
@@ -2272,7 +2272,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b983_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l983">
                     <property name="visible">True</property>
@@ -2293,7 +2293,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b962_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l962">
                     <property name="visible">True</property>
@@ -2314,7 +2314,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b972_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l972">
                     <property name="visible">True</property>
@@ -2335,7 +2335,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b982_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l982">
                     <property name="visible">True</property>
@@ -2356,7 +2356,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b961_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l961">
                     <property name="visible">True</property>
@@ -2377,7 +2377,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b971_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l971">
                     <property name="visible">True</property>
@@ -2398,7 +2398,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b981_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l981">
                     <property name="visible">True</property>
@@ -2419,7 +2419,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b960_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l960">
                     <property name="visible">True</property>
@@ -2440,7 +2440,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b970_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l970">
                     <property name="visible">True</property>
@@ -2461,7 +2461,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b980_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l980">
                     <property name="visible">True</property>
@@ -2482,7 +2482,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b907_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l907">
                     <property name="visible">True</property>
@@ -2503,7 +2503,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b908_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l908">
                     <property name="visible">True</property>
@@ -2524,7 +2524,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b917_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l917">
                     <property name="visible">True</property>
@@ -2545,7 +2545,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b918_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l918">
                     <property name="visible">True</property>
@@ -2566,7 +2566,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b927_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l927">
                     <property name="visible">True</property>
@@ -2587,7 +2587,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b928_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l928">
                     <property name="visible">True</property>
@@ -2608,7 +2608,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b937_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l937">
                     <property name="visible">True</property>
@@ -2629,7 +2629,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b938_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l938">
                     <property name="visible">True</property>
@@ -2650,7 +2650,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b947_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l947">
                     <property name="visible">True</property>
@@ -2671,7 +2671,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b948_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l948">
                     <property name="visible">True</property>
@@ -2692,7 +2692,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b957_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l957">
                     <property name="visible">True</property>
@@ -2713,7 +2713,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b958_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l958">
                     <property name="visible">True</property>
@@ -2734,7 +2734,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b967_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l967">
                     <property name="visible">True</property>
@@ -2755,7 +2755,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b968_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l968">
                     <property name="visible">True</property>
@@ -2776,7 +2776,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b977_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l977">
                     <property name="visible">True</property>
@@ -2797,7 +2797,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b978_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l978">
                     <property name="visible">True</property>
@@ -2818,7 +2818,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b987_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l987">
                     <property name="visible">True</property>
@@ -2839,7 +2839,7 @@ In the 9x9 the same thing, in addition to the number
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_b988_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_b900_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLabel" id="l988">
                     <property name="visible">True</property>
