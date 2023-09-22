@@ -135,7 +135,7 @@ void generate6(){
     int rem[36];
     for(int i=0;i<36;i++)rem[i] = i;
     int end = 36;
-    while(end>=20){
+    while(end>=16){
         srand(time(0));
         int chose = rem[rand()%end];
         removed6[rem[chose]]=true;
