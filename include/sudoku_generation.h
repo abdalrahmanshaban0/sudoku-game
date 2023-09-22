@@ -16,7 +16,7 @@ int getsub(int i,int j){
     }else return 6 + j/3;
 }
 // check if it is valid to put val in (r,c) or not in O(1)
-bool valid9(int r,int c,int val){
+bool can9(int r, int c, int val){
     if(row[r][val] || col[c][val] || sub[getsub(r, c)][val])return false;
     return true;
 }
@@ -41,7 +41,7 @@ bool rec9(int r, int c, int sudoku9[][9]){
     int size = 0;
     int pick[9]={};
     for(int i=1;i<=9;i++){
-        if(valid9(r,c,i)){
+        if(can9(r, c, i)){
             pick[size++] = i;
         }
     }
@@ -86,7 +86,7 @@ void generate9() {
     rec9(0, 0, sudoku9);
 }
 // same idea like 9*9 but difference in valid that no condition on squares of size 3*3
-bool valid6(int r,int c,int tmp){
+bool can6(int r, int c, int tmp){
     if(row[r][tmp] || col[c][tmp])return false;
     return true;
 }
@@ -107,7 +107,7 @@ bool rec6(int r, int c, int sudoku6[][6]){
     int idx =0;
     int pick[6];
     for(int i=1;i<=6;i++){
-        if(valid6(r,c,i)){
+        if(can6(r, c, i)){
             pick[idx++] = i;
         }
     }
