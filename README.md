@@ -6,7 +6,7 @@ Features:<br>
 2- Randomization<br>
 3- Save<br>
 
-![image](https://github.com/abdalrahmanshaban0/sudoku-game/assets/126330281/a846356f-bc3e-42f9-aae2-69e8a70130ab)
+![image](https://github.com/abdalrahmanshaban0/sudoku-game/assets/126330281/6f58f5e7-553f-4569-ad9c-0ca6d60ead29)
 
 
 Dependencies:<br>
