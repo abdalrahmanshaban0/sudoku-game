@@ -182,7 +182,7 @@ void on_save9_clicked(GtkButton* b){
 void on_submit6_clicked(GtkButton* b){
     for(int i = 0 ;i < 6; i++){
         for(int j = 0; j < 6; j++){
-            if(!valid6(i, j, su6)){
+            if(!no_empty6(su6) || !valid6(i, j, su6)){
                 gtk_widget_show(notvalid);
                 return;
             }
@@ -193,7 +193,7 @@ void on_submit6_clicked(GtkButton* b){
 void on_submit9_clicked(GtkButton* b){
     for(int i = 0 ;i < 9; i++){
         for(int j = 0; j < 9; j++){
-            if(!valid9(i, j, su9)){
+            if(!no_empty9(su9) || !valid9(i, j, su9)){
                 gtk_widget_show(notvalid);
                 return;
             }
