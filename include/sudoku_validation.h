@@ -6,6 +6,24 @@
 
 const int n = 9, m = 6;
 
+bool no_empty6(int sudoku[][m]){
+    for(int i = 0 ;i < m; i++){
+        for(int j = 0; j < m; j++){
+            if(!sudoku[i][j]) return 0;
+        }
+    }
+    return 1;
+}
+
+bool no_empty9(int sudoku[][n]){
+    for(int i = 0 ;i < n; i++){
+        for(int j = 0; j < n; j++){
+            if(!sudoku[i][j]) return 0;
+        }
+    }
+    return 1;
+}
+
 bool valid6(int x, int y, int sudoku[][m]){
     int val = sudoku[x][y];
     int cnt = 0;
