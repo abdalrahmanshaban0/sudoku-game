@@ -1,5 +1,4 @@
 #include "sudoku_validation.h"
-
 //idea of code that I will generate a valid grid then remove some elements from it
 
 // row , col , sub its just frequency array just to check if can put element in this place in O(1)
@@ -97,7 +96,7 @@ bool rec6(int r, int c, int sudoku6[][6]){
                 if(removed6[i*6 + j]){
                     printf("%d ",0);
                 }else{
-                    printf("%c ",sudoku6[i][j]);
+                    printf("%d ",sudoku6[i][j]);
                 }
             }
             printf("\n");
